@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authen_nav_graph"
+    app:startDestination="@id/signInFragment">
+
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.vuonghung.dpz.presentation.screen.main.MainActivity"
+        android:label="main_screen"/>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.vuonghung.dpz.presentation.screen.authentication.login.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/act_sign_in_to_sign_up"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/act_signIn_to_home"
+            app:destination="@id/homeActivity">
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.vuonghung.dpz.presentation.screen.authentication.register.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/act_sign_up_to_sign_in"
+            app:destination="@+id/signInFragment"
+            app:popUpTo="@id/signInFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

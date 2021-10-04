@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DPZ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--btn title-->
+    <string name="btn_title_login">LOGIN</string>
+    <string name="btn_title_sign_up">SIGN UP</string>
+</resources>
