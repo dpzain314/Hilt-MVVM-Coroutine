@@ -8,5 +8,5 @@ open class BaseResponse<T>(
 //    @SerializedName("message")
 //    var message: String? = "",
     @SerializedName("items")
-    var items: List<T>? = null,
+    var data: List<T>? = null,
 )

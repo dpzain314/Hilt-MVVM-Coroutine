@@ -1,11 +1,15 @@
 package com.vuonghung.dpz.data.model
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class UserModel(
-    @SerializedName("name")
-    var name: String,
     @SerializedName("id")
-    var id: Int){
+    val id: Int = 0,
 
-}
+    @SerializedName("name")
+    val name: String = "",
+
+    @SerializedName("phone")
+    val phone: String = ""
+):Serializable

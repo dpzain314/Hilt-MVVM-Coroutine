@@ -1,9 +1,11 @@
 package com.vuonghung.dpz.data.remote
 
+import android.util.Log
 import com.vuonghung.dpz.utils.Resource
 import com.vuonghung.dpz.utils.network.ConnectNetworkManager
 import retrofit2.Response
 import timber.log.Timber
+import java.util.logging.Logger
 import javax.inject.Inject
 
 abstract class BaseDataSource {

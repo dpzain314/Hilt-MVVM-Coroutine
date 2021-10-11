@@ -23,13 +23,13 @@ class MainActivity : BaseActivity() {
     }
 
     private fun setupObserver(){
-        viewModel.listUsers.observe(this, Observer {
-            when (it.status){
-                Status.LOADING ->{}
-                Status.SUCCESS ->{}
-                Status.ERROR ->{}
-            }
-        })
+//        viewModel.listUsers.observe(this, Observer {
+//            when (it.status){
+//                Status.LOADING ->{}
+//                Status.SUCCESS ->{}
+//                Status.ERROR ->{}
+//            }
+//        })
     }
 
 }
